@@ -34,62 +34,58 @@ Partial Class frmSmartHome
         '
         'btnStats
         '
-        Me.btnStats.Location = New System.Drawing.Point(353, 262)
+        Me.btnStats.Location = New System.Drawing.Point(254, 359)
         Me.btnStats.Name = "btnStats"
-        Me.btnStats.Size = New System.Drawing.Size(75, 23)
+        Me.btnStats.Size = New System.Drawing.Size(326, 55)
         Me.btnStats.TabIndex = 0
         Me.btnStats.Text = "Button1"
         Me.btnStats.UseVisualStyleBackColor = True
         '
         'lblHeading
         '
-        Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(488, 38)
+        Me.lblHeading.Location = New System.Drawing.Point(423, 38)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.Size = New System.Drawing.Size(389, 90)
         Me.lblHeading.TabIndex = 1
         Me.lblHeading.Text = "Label1"
         '
         'cboMonth
         '
         Me.cboMonth.FormattingEnabled = True
-        Me.cboMonth.Location = New System.Drawing.Point(501, 142)
+        Me.cboMonth.Location = New System.Drawing.Point(557, 194)
         Me.cboMonth.Name = "cboMonth"
         Me.cboMonth.Size = New System.Drawing.Size(121, 24)
         Me.cboMonth.TabIndex = 2
         '
         'lblStats
         '
-        Me.lblStats.AutoSize = True
-        Me.lblStats.Location = New System.Drawing.Point(222, 212)
+        Me.lblStats.Location = New System.Drawing.Point(151, 282)
         Me.lblStats.Name = "lblStats"
-        Me.lblStats.Size = New System.Drawing.Size(51, 17)
+        Me.lblStats.Size = New System.Drawing.Size(532, 58)
         Me.lblStats.TabIndex = 3
         Me.lblStats.Text = "Label2"
         '
         'lblAvg
         '
-        Me.lblAvg.AutoSize = True
-        Me.lblAvg.Location = New System.Drawing.Point(225, 334)
+        Me.lblAvg.Location = New System.Drawing.Point(151, 438)
         Me.lblAvg.Name = "lblAvg"
-        Me.lblAvg.Size = New System.Drawing.Size(51, 17)
+        Me.lblAvg.Size = New System.Drawing.Size(532, 58)
         Me.lblAvg.TabIndex = 4
         Me.lblAvg.Text = "Label3"
         '
         'lblMost
         '
-        Me.lblMost.AutoSize = True
-        Me.lblMost.Location = New System.Drawing.Point(228, 390)
+        Me.lblMost.Location = New System.Drawing.Point(151, 514)
         Me.lblMost.Name = "lblMost"
-        Me.lblMost.Size = New System.Drawing.Size(51, 17)
+        Me.lblMost.Size = New System.Drawing.Size(532, 58)
         Me.lblMost.TabIndex = 5
         Me.lblMost.Text = "Label4"
         '
         'picSmartHome
         '
-        Me.picSmartHome.Location = New System.Drawing.Point(52, 38)
+        Me.picSmartHome.Location = New System.Drawing.Point(0, 0)
         Me.picSmartHome.Name = "picSmartHome"
-        Me.picSmartHome.Size = New System.Drawing.Size(100, 50)
+        Me.picSmartHome.Size = New System.Drawing.Size(405, 267)
         Me.picSmartHome.TabIndex = 6
         Me.picSmartHome.TabStop = False
         '
@@ -97,7 +93,7 @@ Partial Class frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(835, 593)
         Me.Controls.Add(Me.picSmartHome)
         Me.Controls.Add(Me.lblMost)
         Me.Controls.Add(Me.lblAvg)
@@ -109,7 +105,6 @@ Partial Class frmSmartHome
         Me.Text = "Form1"
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
