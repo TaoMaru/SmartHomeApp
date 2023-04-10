@@ -15,5 +15,39 @@ Public Class frmSmartHome
 
     Private Sub cboMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboMonth.SelectedIndexChanged
         btnStats.Visible = True
+
+
     End Sub
+
+    Private Function ReadFile(ByVal fileName As String) As Boolean
+        Dim isValid As Boolean = False
+        Dim ioReader As IO.StreamReader
+
+
+        Try
+            ioReader = IO.File.OpenText(fileName)
+            isValid = True
+            Return isValid
+        Catch ex As System.IO.FileNotFoundException
+            MsgBox("There was trouble reading the file. Please try again.", vbOKOnly, "File Read Error")
+
+        End Try
+
+    End Function
+
+    Private Sub GetData(ByVal fileName As String)
+        ' extracts data from file, populates array
+        Dim savings(12) As String
+        Dim intIndex As Integer
+
+        If (ReadFile("savings.txt")) Then
+            For intIndex = 0 To (savings.Length - 1)
+                savings(intIndex) = Convert.ToInt32("intIndex")
+            Next
+        End If
+
+
+
+    End Sub
+
 End Class
