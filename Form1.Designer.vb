@@ -22,17 +22,102 @@ Partial Class frmSmartHome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnStats = New System.Windows.Forms.Button()
+        Me.lblHeading = New System.Windows.Forms.Label()
+        Me.cboMonth = New System.Windows.Forms.ComboBox()
+        Me.lblStats = New System.Windows.Forms.Label()
+        Me.lblAvg = New System.Windows.Forms.Label()
+        Me.lblMost = New System.Windows.Forms.Label()
+        Me.picSmartHome = New System.Windows.Forms.PictureBox()
+        CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'btnStats
+        '
+        Me.btnStats.Location = New System.Drawing.Point(353, 262)
+        Me.btnStats.Name = "btnStats"
+        Me.btnStats.Size = New System.Drawing.Size(75, 23)
+        Me.btnStats.TabIndex = 0
+        Me.btnStats.Text = "Button1"
+        Me.btnStats.UseVisualStyleBackColor = True
+        '
+        'lblHeading
+        '
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Location = New System.Drawing.Point(488, 38)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.TabIndex = 1
+        Me.lblHeading.Text = "Label1"
+        '
+        'cboMonth
+        '
+        Me.cboMonth.FormattingEnabled = True
+        Me.cboMonth.Location = New System.Drawing.Point(501, 142)
+        Me.cboMonth.Name = "cboMonth"
+        Me.cboMonth.Size = New System.Drawing.Size(121, 24)
+        Me.cboMonth.TabIndex = 2
+        '
+        'lblStats
+        '
+        Me.lblStats.AutoSize = True
+        Me.lblStats.Location = New System.Drawing.Point(222, 212)
+        Me.lblStats.Name = "lblStats"
+        Me.lblStats.Size = New System.Drawing.Size(51, 17)
+        Me.lblStats.TabIndex = 3
+        Me.lblStats.Text = "Label2"
+        '
+        'lblAvg
+        '
+        Me.lblAvg.AutoSize = True
+        Me.lblAvg.Location = New System.Drawing.Point(225, 334)
+        Me.lblAvg.Name = "lblAvg"
+        Me.lblAvg.Size = New System.Drawing.Size(51, 17)
+        Me.lblAvg.TabIndex = 4
+        Me.lblAvg.Text = "Label3"
+        '
+        'lblMost
+        '
+        Me.lblMost.AutoSize = True
+        Me.lblMost.Location = New System.Drawing.Point(228, 390)
+        Me.lblMost.Name = "lblMost"
+        Me.lblMost.Size = New System.Drawing.Size(51, 17)
+        Me.lblMost.TabIndex = 5
+        Me.lblMost.Text = "Label4"
+        '
+        'picSmartHome
+        '
+        Me.picSmartHome.Location = New System.Drawing.Point(52, 38)
+        Me.picSmartHome.Name = "picSmartHome"
+        Me.picSmartHome.Size = New System.Drawing.Size(100, 50)
+        Me.picSmartHome.TabIndex = 6
+        Me.picSmartHome.TabStop = False
         '
         'frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.picSmartHome)
+        Me.Controls.Add(Me.lblMost)
+        Me.Controls.Add(Me.lblAvg)
+        Me.Controls.Add(Me.lblStats)
+        Me.Controls.Add(Me.cboMonth)
+        Me.Controls.Add(Me.lblHeading)
+        Me.Controls.Add(Me.btnStats)
         Me.Name = "frmSmartHome"
         Me.Text = "Form1"
+        CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents btnStats As Button
+    Friend WithEvents lblHeading As Label
+    Friend WithEvents cboMonth As ComboBox
+    Friend WithEvents lblStats As Label
+    Friend WithEvents lblAvg As Label
+    Friend WithEvents lblMost As Label
+    Friend WithEvents picSmartHome As PictureBox
 End Class
