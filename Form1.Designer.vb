@@ -55,11 +55,14 @@ Partial Class frmSmartHome
         '
         'cboMonth
         '
+        Me.cboMonth.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboMonth.FormattingEnabled = True
-        Me.cboMonth.Location = New System.Drawing.Point(557, 194)
+        Me.cboMonth.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
+        Me.cboMonth.Location = New System.Drawing.Point(504, 169)
         Me.cboMonth.Name = "cboMonth"
-        Me.cboMonth.Size = New System.Drawing.Size(121, 24)
+        Me.cboMonth.Size = New System.Drawing.Size(253, 41)
         Me.cboMonth.TabIndex = 2
+        Me.cboMonth.Text = "Select Month:"
         '
         'lblStats
         '
