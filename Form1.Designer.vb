@@ -35,20 +35,25 @@ Partial Class frmSmartHome
         '
         'btnStats
         '
+        Me.btnStats.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStats.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStats.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.btnStats.Location = New System.Drawing.Point(230, 380)
         Me.btnStats.Name = "btnStats"
         Me.btnStats.Size = New System.Drawing.Size(375, 55)
         Me.btnStats.TabIndex = 0
         Me.btnStats.Text = "Display Statistics"
-        Me.btnStats.UseVisualStyleBackColor = True
+        Me.btnStats.UseVisualStyleBackColor = False
         '
         'lblHeading
         '
+        Me.lblHeading.BackColor = System.Drawing.Color.Transparent
         Me.lblHeading.Font = New System.Drawing.Font("Tahoma", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(434, 9)
+        Me.lblHeading.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.lblHeading.Location = New System.Drawing.Point(412, 27)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(389, 126)
+        Me.lblHeading.Size = New System.Drawing.Size(421, 126)
         Me.lblHeading.TabIndex = 1
         Me.lblHeading.Text = "Smart Home" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Electric Savings"
         Me.lblHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -58,7 +63,7 @@ Partial Class frmSmartHome
         Me.cboMonth.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboMonth.FormattingEnabled = True
         Me.cboMonth.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
-        Me.cboMonth.Location = New System.Drawing.Point(504, 169)
+        Me.cboMonth.Location = New System.Drawing.Point(505, 197)
         Me.cboMonth.Name = "cboMonth"
         Me.cboMonth.Size = New System.Drawing.Size(253, 41)
         Me.cboMonth.TabIndex = 2
@@ -66,7 +71,9 @@ Partial Class frmSmartHome
         '
         'lblStats
         '
+        Me.lblStats.BackColor = System.Drawing.Color.Transparent
         Me.lblStats.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStats.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.lblStats.Location = New System.Drawing.Point(44, 319)
         Me.lblStats.Name = "lblStats"
         Me.lblStats.Size = New System.Drawing.Size(747, 58)
@@ -76,7 +83,9 @@ Partial Class frmSmartHome
         '
         'lblAvg
         '
+        Me.lblAvg.BackColor = System.Drawing.Color.Transparent
         Me.lblAvg.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAvg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.lblAvg.Location = New System.Drawing.Point(44, 447)
         Me.lblAvg.Name = "lblAvg"
         Me.lblAvg.Size = New System.Drawing.Size(747, 58)
@@ -86,7 +95,9 @@ Partial Class frmSmartHome
         '
         'lblMost
         '
+        Me.lblMost.BackColor = System.Drawing.Color.Transparent
         Me.lblMost.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMost.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
         Me.lblMost.Location = New System.Drawing.Point(44, 526)
         Me.lblMost.Name = "lblMost"
         Me.lblMost.Size = New System.Drawing.Size(747, 58)
@@ -108,6 +119,7 @@ Partial Class frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(835, 593)
         Me.Controls.Add(Me.picSmartHome)
         Me.Controls.Add(Me.lblMost)
@@ -117,6 +129,7 @@ Partial Class frmSmartHome
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.btnStats)
         Me.Name = "frmSmartHome"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
