@@ -97,7 +97,7 @@ Partial Class frmSmartHome
         Me.lblMost.BackColor = System.Drawing.Color.Transparent
         Me.lblMost.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMost.ForeColor = System.Drawing.Color.FromArgb(CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.lblMost.Location = New System.Drawing.Point(44, 526)
+        Me.lblMost.Location = New System.Drawing.Point(44, 505)
         Me.lblMost.Name = "lblMost"
         Me.lblMost.Size = New System.Drawing.Size(747, 58)
         Me.lblMost.TabIndex = 5
