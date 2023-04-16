@@ -62,7 +62,6 @@ Partial Class frmSmartHome
         '
         Me.cboMonth.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboMonth.FormattingEnabled = True
-        Me.cboMonth.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
         Me.cboMonth.Location = New System.Drawing.Point(505, 197)
         Me.cboMonth.Name = "cboMonth"
         Me.cboMonth.Size = New System.Drawing.Size(253, 41)
@@ -130,7 +129,7 @@ Partial Class frmSmartHome
         Me.Controls.Add(Me.btnStats)
         Me.Name = "frmSmartHome"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "Smart Home App"
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
