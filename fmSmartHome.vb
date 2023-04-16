@@ -37,7 +37,8 @@ Public Class frmSmartHome
             boolIsValid = True
             ioReader.Close()
         Catch ex As System.IO.FileNotFoundException
-            MsgBox("There was trouble reading the file. Please try again.", vbOKOnly, "File Read Error")
+            MsgBox("There was trouble reading the file. Please close the app, check the file, and try again.",
+                   vbOKOnly, "File Read Error")
 
         End Try
         Return boolIsValid
